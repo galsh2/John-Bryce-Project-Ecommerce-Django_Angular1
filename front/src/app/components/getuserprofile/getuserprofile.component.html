@@ -1,0 +1,41 @@
+<p>getuserprofile works!</p>
+
+
+
+<!-- user-profile.component.html -->
+<!-- <p>The profile data is null.</p>
+<app-postuserprofile></app-postuserprofile> -->
+<!-- <a routerLink="/postuserprofile">Click here to create a profile</a> -->
+<!-- <button type="button" class="btn btn-primary"></button> -->
+
+<div *ngIf="userProfile">
+  <h2>{{ userProfile.first_name }} {{ userProfile.last_name }}</h2>
+  <p>Phone: {{ userProfile.phone }}</p>
+  <p>Address: {{ userProfile.address }}</p>
+  <p>city: {{ userProfile.city }}</p>
+  <!-- <p>pic: {{ userProfile.profile_picture }}</p> -->
+  <p><img [src]="'http://localhost:8000/' + userProfile.profile_picture" alt="{{ userProfile.first_name }}'s Profile Picture" width="300"></p>
+  <!-- <p><img *ngIf="userProfile.profile_picture" [src]="http://localhost:8000/media/profile_pictures/" alt="{{ userProfile.first_name }}'s Profile Picture" width="100"></p>
+  <div *ngIf="userProfile">
+    <img [src]="userProfile.profile_picture" alt="User Profile Picture">
+  </div> -->
+  <!-- ... other fields ... -->
+  <!-- <a routerLink="/postuserprofile">Click here to create a profile</a> -->
+</div>
+
+<!-- Error message and link to POST form -->
+<div *ngIf="error">
+  <p>The profile data is null.</p>
+  <!-- <a routerLink="/postuserprofile">Click here to create a profile</a> -->
+  <app-postuserprofile></app-postuserprofile>
+</div>
+
+
+<!-- user-profile.component.html -->
+
+<!-- <div *ngIf="userProfile">
+    <h2>{{ userProfile.first_name }} {{ userProfile.last_name }}</h2>
+    <p>Phone: {{ userProfile.phone }}</p>
+    <p>Address: {{ userProfile.address }}</p> -->
+    <!-- ... other fields ... -->
+  <!-- </div> -->

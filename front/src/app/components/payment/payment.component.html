@@ -1,0 +1,33 @@
+<!-- <p>payment works!</p> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paypal</title> -->
+    <!-- <script src="https://www.paypal.com/sdk/js?currency=USD&client-id=AfjErurhGutAlZ0UjrkKrHbu9dyxWrWpSJ9IoGe-62oosu59tKFpPaPYhx80Je69CT0F94IuCZsBwEBt"> </script> -->
+    <!-- <script src="https://www.paypal.com/sdk/client-id=AfjErurhGutAlZ0UjrkKrHbu9dyxWrWpSJ9IoGe-62oosu59tKFpPaPYhx80Je69CT0F94IuCZsBwEBt"> </script> -->
+<!-- </head>
+<body> -->
+    <!-- <script src="https://www.paypal.com/sdk/client-id=AfjErurhGutAlZ0UjrkKrHbu9dyxWrWpSJ9IoGe-62oosu59tKFpPaPYhx80Je69CT0F94IuCZsBwEBt"> </script> -->
+    <!-- <p>payment works!</p>
+</body>
+</html> -->
+
+<!-- <div class="paypal-container"> -->
+    <!-- <div #paymentRef></div> -->
+    <div id="paypal-button-container"></div>
+<!-- </div> -->
+
+<!-- <div *ngIf="authService.isLoggedIn()">
+    <div id="paypal-button-container"></div>
+  </div> -->
+  <div *ngIf="!authService.isLoggedIn()">
+    <p>You need to be logged in to proceed with payment.</p>
+  </div>
+
+  <!-- <div id="confirmation-message" style="display: none;">
+    <h2>Payment Successful</h2>
+    <p>Thank you for your purchase!</p>
+    <button (click)="printConfirmation()">Print Confirmation</button>
+  </div> -->
